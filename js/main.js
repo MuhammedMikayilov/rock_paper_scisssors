@@ -46,16 +46,16 @@ const compImg = (player, computer) => {
   if (player === "rock") {
     // console.log("hello");
     if (computer === "icon-paper") {
-      console.log("Aue");
+      console.log("comp win");
     }
   }
   if (player === "icon-paper") {
     // console.log("hello");
     if (computer === "icon-scissors") {
-      console.log("yeap");
+      console.log("scissor win");
     }
   } else {
-    console.log("OOO");
+    console.log("rock win");
   }
 };
 
