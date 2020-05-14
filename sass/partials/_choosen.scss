@@ -1,0 +1,30 @@
+#choosen {
+  margin-top: 5%;
+  position: relative;
+
+  .big {
+    top: 70px;
+    left: 18%;
+    width: 250px;
+    height: 250px;
+    line-height: 250px;
+
+    .hands {
+      width: 180px;
+      height: 180px;
+      line-height: 180px;
+
+      top: 36px;
+      left: 14%;
+
+      img {
+        width: 100px;
+      }
+    }
+  }
+
+  h2 {
+    text-align: center;
+    color: white;
+  }
+}

@@ -43,48 +43,110 @@ body {
   .header-games {
     width: 80%;
     margin-left: 10%; } }
-#step_one {
+#main {
   margin-top: 5%;
   padding: 204px 0;
   background-image: url("../images/bg-triangle.svg");
   background-repeat: no-repeat;
   background-position: center center;
   position: relative; }
-  #step_one .hands {
-    background-color: white !important;
-    width: 100px;
-    height: 100px;
+
+.hands {
+  background-color: white !important;
+  width: 100px;
+  height: 100px;
+  max-width: 100%;
+  line-height: 92px;
+  text-align: center;
+  border-radius: 50%;
+  position: absolute;
+  top: 25px;
+  left: 25px; }
+
+.images {
+  border-radius: 50%; }
+  .images .hand {
+    width: 150px;
+    height: 150px;
     max-width: 100%;
-    line-height: 92px;
+    line-height: 150px;
     text-align: center;
-    border-radius: 50%;
-    position: absolute;
-    top: 25px;
-    left: 25px; }
-  #step_one .images {
-    border-radius: 50%;
+    border-radius: 50%; }
+  .images img {
     cursor: pointer; }
-    #step_one .images .hand {
-      width: 150px;
-      height: 150px;
-      max-width: 100%;
-      line-height: 150px;
-      text-align: center;
-      border-radius: 50%; }
-    #step_one .images .paper {
-      background-image: linear-gradient(#4865f4, #5671f5);
+  .images .paper {
+    background-image: linear-gradient(#4865f4, #5671f5);
+    position: absolute;
+    top: -208px;
+    left: 18%; }
+  .images .scissors {
+    background-image: linear-gradient(#ec9e0e, #eca922);
+    position: absolute;
+    top: -208px;
+    right: 18%; }
+  .images .rock {
+    background-image: linear-gradient(#dc2e4e, #dd405d);
+    position: absolute;
+    top: 24px;
+    left: 39.5%; }
+
+span.rule {
+  border: 2px solid #606e85;
+  color: white;
+  display: inline-block;
+  padding: 5px 25px;
+  border-radius: 8px;
+  position: absolute;
+  bottom: 10px;
+  right: 3%;
+  text-transform: uppercase;
+  cursor: pointer; }
+
+.popup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.596);
+  z-index: 999;
+  display: none; }
+  .popup .rules {
+    padding: 25px 30px;
+    background-color: white;
+    position: relative; }
+    .popup .rules h2 {
+      text-transform: uppercase;
+      font-family: "Barlow Semi Condensed", sans-serif;
+      font-weight: 700; }
+    .popup .rules .closePopup {
       position: absolute;
-      top: -208px;
-      left: 18%; }
-    #step_one .images .scissors {
-      background-image: linear-gradient(#ec9e0e, #eca922);
-      position: absolute;
-      top: -208px;
-      right: 18%; }
-    #step_one .images .rock {
-      background-image: linear-gradient(#dc2e4e, #dd405d);
-      position: absolute;
-      top: 24px;
-      left: 39.5%; }
+      top: 25px;
+      right: 20px;
+      cursor: pointer; }
+
+#choosen {
+  margin-top: 5%;
+  position: relative; }
+  #choosen .big {
+    top: 70px;
+    left: 18%;
+    width: 250px;
+    height: 250px;
+    line-height: 250px; }
+    #choosen .big .hands {
+      width: 180px;
+      height: 180px;
+      line-height: 180px;
+      top: 36px;
+      left: 14%; }
+      #choosen .big .hands img {
+        width: 100px; }
+  #choosen h2 {
+    text-align: center;
+    color: white; }
 
 /*# sourceMappingURL=style.css.map */

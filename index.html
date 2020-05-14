@@ -39,39 +39,102 @@
     </header>
 
     <main>
-      <section id="step_one">
+      <!-- Step One -->
+      <section id="main">
         <!-- <img src="images/bg-triangle.svg" alt="" /> -->
         <div class="container">
           <div class="row">
             <div class="col-sm-8 offset-sm-2">
               <div class="row">
                 <!-- <div class="col-md-6"> -->
-                <div class="images">
+                <div class="images rps" id="paper">
                   <div class="paper hand">
                     <div class="hands">
-                      <img src="images/icon-paper.svg" alt="" />
+                      <img
+                        src="images/icon-paper.svg"
+                        class="paperHand icon-paper"
+                        alt=""
+                      />
                     </div>
                   </div>
                 </div>
                 <!-- </div> -->
-                <div class="images">
+                <div class="images rps" id="scissors">
                   <div class="scissors hand">
                     <div class="hands">
-                      <img src="images/icon-scissors.svg" alt="" />
+                      <img
+                        src="images/icon-scissors.svg"
+                        class="scissorHand icon-scissors"
+                        alt=""
+                      />
                     </div>
                   </div>
                 </div>
 
-                <div class="images">
+                <div class="images rps" id="rock">
                   <div class="rock hand">
                     <div class="hands">
-                      <img src="images/icon-rock.svg" alt="" />
+                      <img
+                        src="images/icon-rock.svg"
+                        class="rockHand icon-rock"
+                        alt=""
+                      />
                     </div>
                   </div>
                 </div>
               </div>
 
               <!-- Imgs end -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <span class="rule">rules</span>
+      <div class="popup">
+        <div class="inner">
+          <div class="rules">
+            <h2>Rules</h2>
+            <img src="images/rule-modal.png" alt="" />
+
+            <img src="images/icon-close.svg" class="closePopup" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Step One -->
+
+      <!-- Step Two -->
+      <section id="choosen">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <h2>Your Picked</h2>
+
+              <div class="images choosen_img">
+                <div class="big rock hand" id="name">
+                  <div class="hands">
+                    <img src="images/icon-rock.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="winner d-flex flex-column align-items-center">
+                <h2>You Win</h2>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <h2>Your Picked</h2>
+
+              <div class="images comp_img">
+                <div class="big rock hand" id="name">
+                  <div class="hands">
+                    <img src="images/icon-rock.svg" alt="" />
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
