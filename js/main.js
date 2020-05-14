@@ -95,6 +95,10 @@ const gameRPS = function () {
           if (countScore < 0) {
             countScore = 0;
             count.innerHTML = "0";
+            win.innerHTML = "GAME OVER";
+            setTimeout(() => {
+              location.reload();
+            }, 3000);
           }
         } else if (computer === "images/icon-scissors.svg") {
           win.innerHTML = "You Win";
@@ -109,9 +113,16 @@ const gameRPS = function () {
           count.innerHTML = countScore;
 
           countScore--;
+          count.innerHTML = countScore;
+
           if (countScore < 0) {
             countScore = 0;
             count.innerHTML = "0";
+            win.innerHTML = "GAME OVER";
+
+            setTimeout(() => {
+              location.reload();
+            }, 3000);
           }
         } else if (computer === "images/icon-rock.svg") {
           win.innerHTML = "You Win";
@@ -128,9 +139,14 @@ const gameRPS = function () {
 
           countScore--;
           count.innerHTML = countScore;
+
           if (countScore < 0) {
             countScore = 0;
             count.innerHTML = "0";
+            win.innerHTML = "GAME OVER";
+            setTimeout(() => {
+              location.reload();
+            }, 3000);
           }
         }
       }
