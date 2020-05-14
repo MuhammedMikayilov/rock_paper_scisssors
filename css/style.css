@@ -39,7 +39,7 @@ body {
       margin-left: 8px;
       letter-spacing: 0.1em; }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 470px) {
   .header-games {
     width: 80% !important;
     margin-left: 10% !important;
@@ -190,7 +190,7 @@ span.rule {
 .non {
   display: none; }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 470px) {
   h2 {
     font-size: 15px !important; }
 
