@@ -56,25 +56,26 @@ const compImg = (player, computer) => {
   console.log(playerAttr);
   console.log(computer);
   if (playerAttr === computer) {
-    // console.log("hello");
-
     win.innerHTML = "Draw";
-  }
-  if (playerAttr == "icon-rock") {
+  } else if (playerAttr === "images/icon-rock.svg") {
     console.log("hello");
-    if (computer === "images/icon-paper") {
-      console.log("comp win");
+    if (computer === "images/icon-paper.svg") {
+      //   console.log("comp win");
+      win.innerHTML = "Computer Win";
+    } else if (computer === "images/icon-scissors.svg") {
+      win.innerHTML = "You Win";
     }
-  }
-  if (playerAttr === "images/icon-paper") {
+  } else if (playerAttr === "images/icon-paper.svg") {
     // console.log("hello");
-    if (computer === "images/icon-scissors") {
+    if (computer === "images/icon-scissors.svg") {
       console.log("scissor win");
+      win.innerHTML = "Computer Win";
     } else {
       console.log("rock win");
     }
   } else {
     console.log("rock win");
+    win.innerHTML = "You Win";
   }
 };
 
