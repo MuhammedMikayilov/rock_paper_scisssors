@@ -27,4 +27,40 @@
     text-align: center;
     color: white;
   }
+
+  .winner {
+    margin-top: 41%;
+    font-family: $font-barlow;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    h2 {
+      letter-spacing: 0.1em;
+      font-size: 43px;
+    }
+
+    .btn {
+      padding: 10px 30%;
+      background-color: white;
+      color: #15183b;
+      border: none;
+      margin-bottom: 15px;
+      cursor: pointer;
+      transition: all 0.5s;
+
+      &:hover {
+        color: crimson;
+        transition: all 0.5s;
+      }
+    }
+  }
+}
+
+.animation {
+  animation: shakeY;
+  animation-duration: 1.7s;
+}
+
+.non {
+  display: none;
 }

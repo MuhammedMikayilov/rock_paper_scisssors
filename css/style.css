@@ -128,6 +128,9 @@ span.rule {
       right: 20px;
       cursor: pointer; }
 
+.non {
+  display: none; }
+
 #choosen {
   margin-top: 5%;
   position: relative;
@@ -149,5 +152,31 @@ span.rule {
   #choosen h2 {
     text-align: center;
     color: white; }
+  #choosen .winner {
+    margin-top: 41%;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase; }
+    #choosen .winner h2 {
+      letter-spacing: 0.1em;
+      font-size: 43px; }
+    #choosen .winner .btn {
+      padding: 10px 30%;
+      background-color: white;
+      color: #15183b;
+      border: none;
+      margin-bottom: 15px;
+      cursor: pointer;
+      transition: all 0.5s; }
+      #choosen .winner .btn:hover {
+        color: crimson;
+        transition: all 0.5s; }
+
+.animation {
+  animation: shakeY;
+  animation-duration: 1.7s; }
+
+.non {
+  display: none; }
 
 /*# sourceMappingURL=style.css.map */

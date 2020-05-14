@@ -14,6 +14,10 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+    />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -30,7 +34,7 @@
 
               <div class="score">
                 <span class="score-head">score</span>
-                <h4 class="score-number">12</h4>
+                <h4 class="score-number">0</h4>
               </div>
             </div>
           </div>
@@ -89,6 +93,7 @@
           </div>
         </div>
       </section>
+
       <span class="rule">rules</span>
       <div class="popup">
         <div class="inner">
@@ -110,7 +115,7 @@
             <div class="col-md-4">
               <h2>Your Picked</h2>
 
-              <div class="images choosen_img">
+              <div class="images animation choosen_img">
                 <div class="big rock hand" id="name">
                   <div class="hands">
                     <img src="images/icon-rock.svg" alt="" />
@@ -120,8 +125,8 @@
             </div>
 
             <div class="col-md-4">
-              <div class="winner d-flex flex-column align-items-center">
-                <h2>You Win</h2>
+              <div class="winner non d-flex flex-column align-items-center">
+                <h2>Rock</h2>
 
                 <a href="#" class="btn btn-primary"> PLAY AGAİN </a>
               </div>
@@ -130,7 +135,7 @@
             <div class="col-md-4">
               <h2>Computer Picked</h2>
 
-              <div class="images comp_img">
+              <div class="images non comp_img">
                 <div class="big rock hand" id="name">
                   <div class="hands">
                     <img src="images/icon-rock.svg" alt="" />
