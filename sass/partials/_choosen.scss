@@ -65,6 +65,104 @@
   display: none;
 }
 
+@media only screen and (max-width: 767px) {
+  #choosen {
+    h2 {
+      font-size: 20px !important;
+    }
+    .compare {
+      position: absolute !important;
+      bottom: -316px !important;
+      left: 25% !important;
+    }
+    .me {
+      left: 30% !important;
+    }
+
+    .rpc-checked {
+      margin-top: 20% !important;
+      font-size: 43px !important;
+    }
+
+    .big {
+      top: 70px;
+      left: 18%;
+      width: 180px;
+      height: 180px;
+      line-height: 153px;
+    }
+    .hands {
+      width: 140px !important;
+      height: 140px !important;
+      max-width: 100% !important;
+      line-height: 140px !important;
+      top: 21px !important;
+      left: 19px !important;
+
+      img {
+        width: 54px !important;
+      }
+    }
+  }
+
+  .img-rules {
+    width: 160px;
+  }
+
+  .order-res-1 {
+    order: 1 !important;
+  }
+  .order-res-2 {
+    order: 2 !important;
+  }
+
+  .left-res {
+    left: 65% !important;
+  }
+
+  #main {
+    .scissors {
+      left: 95% !important;
+    }
+
+    .rock {
+      top: 33px !important;
+      left: 52% !important;
+    }
+  }
+
+  .rule {
+    bottom: 34px !important;
+    right: 42% !important;
+  }
+}
+
+@media only screen and (max-width: 590px) {
+  .header-games {
+    width: 80% !important;
+    margin-left: 10% !important;
+  }
+
+  #main {
+    margin-top: 18% !important;
+
+    .scissors {
+      left: 65% !important;
+    }
+    .paper {
+      left: 11% !important;
+    }
+    .rock {
+      top: 52px !important;
+      left: 36.5% !important;
+    }
+  }
+
+  .rule {
+    right: 39% !important;
+  }
+}
+
 @media only screen and (max-width: 470px) {
   h2 {
     font-size: 15px !important;
@@ -109,28 +207,27 @@
     line-height: 100px !important;
   }
 
-  .bigPaper {
-    top: -185px !important;
-    left: 2% !important;
-  }
+  #main {
+    margin-top: 17% !important;
+    .paper {
+      top: -185px !important;
+      left: 12% !important;
+    }
 
-  .bigSciss {
-    top: -185px !important;
-    right: 3% !important;
-  }
+    .scissors {
+      top: -185px !important;
+      left: 69% !important;
+    }
 
-  .bigRock {
-    top: 52px !important;
-    left: 35% !important;
+    .rock {
+      top: 58px !important;
+      left: 40% !important;
+    }
   }
 
   .rule {
     bottom: 7px !important;
     right: 38% !important;
-  }
-
-  #main {
-    margin-top: 10% !important;
   }
 
   .img-rules {
@@ -146,5 +243,18 @@
 
   .left-res {
     left: 65% !important;
+  }
+}
+
+@media only screen and (max-width: 376px) {
+  #main {
+    margin-top: 19% !important;
+    margin-left: 13px !important;
+    .paper {
+      left: 0 !important;
+    }
+    .rock {
+      left: 33% !important;
+    }
   }
 }

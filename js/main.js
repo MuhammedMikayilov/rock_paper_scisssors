@@ -46,10 +46,18 @@ const gameRPS = function () {
       }, 1700);
 
       back.addEventListener("click", function (e) {
+        let classes = document.querySelector(".choosen_img .big");
+
         e.preventDefault();
         main.style.display = "block";
         choosen.style.display = "none";
         $(".non").css("display", "none");
+
+        if (classes.classList.contains("paper")) {
+          classes.classList.replace("paper", "rock");
+        } else if (classes.classList.contains("scissors")) {
+          classes.classList.replace("scissors", "rock");
+        }
       });
 
       imgForAttr(this);
@@ -70,9 +78,6 @@ const gameRPS = function () {
 
   const compImg = (player, computer) => {
     let playerAttr = player.getAttribute("src");
-
-    // console.log(playerAttr);
-    // console.log(computer);
 
     setTimeout(function () {
       if (playerAttr === computer) {
@@ -141,18 +146,26 @@ const gameRPS = function () {
 
       // main.style.animation = "";
 
-      if (!item.classList.contains("rockHand")) {
+      if (item.classList.contains("paperHand")) {
         if (classes.classList.contains("rock")) {
           classes.classList.replace("rock", "paper");
         }
       } else if (item.classList.contains("scissorHand")) {
         //   console.log("dada");
         if (classes.classList.contains("rock")) {
-          classes.classList.replace("rock", "paper");
+          classes.classList.replace("rock", "scissors");
         }
       } else {
+        // if(classes.classList.contains("rock")){
+        //   classes.classList.replace("rock", "")
+        // }
       }
     }, 1700);
+    classes.classList.add("rock");
+
+    if (!classes.classList.contains("rock")) {
+      // classes.classList.replace("rock", "paper");
+    }
   };
 };
 
