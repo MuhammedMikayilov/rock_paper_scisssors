@@ -146,7 +146,7 @@ const gameRPS = function () {
             win.innerHTML = "GAME OVER";
             setTimeout(() => {
               location.reload();
-            }, 3000);
+            }, 2000);
           }
         }
       }
@@ -176,7 +176,7 @@ const gameRPS = function () {
         //   classes.classList.replace("rock", "")
         // }
       }
-    }, 1700);
+    }, 10);
     classes.classList.add("rock");
 
     if (!classes.classList.contains("rock")) {

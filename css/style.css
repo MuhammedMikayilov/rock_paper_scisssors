@@ -192,32 +192,15 @@ span.rule {
   display: none; }
 
 @media only screen and (max-width: 767px) {
-  #choosen h2 {
-    font-size: 20px !important; }
+  .btn {
+    padding: 10px 24% !important; }
+
   #choosen .compare {
-    position: absolute !important;
-    bottom: -316px !important;
-    left: 25% !important; }
+    left: 20% !important; }
   #choosen .me {
-    left: 30% !important; }
-  #choosen .rpc-checked {
-    margin-top: 20% !important;
-    font-size: 43px !important; }
+    left: 28% !important; }
   #choosen .big {
-    top: 70px;
-    left: 18%;
-    width: 180px;
-    height: 180px;
-    line-height: 153px; }
-  #choosen .hands {
-    width: 140px !important;
-    height: 140px !important;
-    max-width: 100% !important;
-    line-height: 140px !important;
-    top: 21px !important;
-    left: 19px !important; }
-    #choosen .hands img {
-      width: 54px !important; }
+    left: 23% !important; }
 
   .img-rules {
     width: 160px; }
@@ -291,13 +274,13 @@ span.rule {
     margin-top: 17% !important; }
     #main .paper {
       top: -185px !important;
-      left: 12% !important; }
+      left: 6% !important; }
     #main .scissors {
       top: -185px !important;
       left: 69% !important; }
     #main .rock {
       top: 58px !important;
-      left: 40% !important; }
+      left: 37.6% !important; }
 
   .rule {
     bottom: 7px !important;
