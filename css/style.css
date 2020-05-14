@@ -41,8 +41,19 @@ body {
 
 @media only screen and (max-width: 400px) {
   .header-games {
-    width: 80%;
-    margin-left: 10%; } }
+    width: 80% !important;
+    margin-left: 10% !important;
+    padding: 10px !important; }
+
+  .names h3 {
+    font-size: 28px !important; }
+
+  .score {
+    padding: 1px 15px !important; }
+    .score span {
+      font-size: 14px !important; }
+    .score h4 {
+      font-size: 34px !important; } }
 #main {
   margin-top: 5%;
   padding: 204px 0;
@@ -178,5 +189,66 @@ span.rule {
 
 .non {
   display: none; }
+
+@media only screen and (max-width: 400px) {
+  h2 {
+    font-size: 15px !important; }
+
+  .compare {
+    position: absolute !important;
+    bottom: -216px !important;
+    left: 18% !important; }
+
+  .rpc-checked {
+    margin-top: 20% !important;
+    font-size: 43px !important; }
+
+  .hands {
+    width: 80px !important;
+    height: 80px !important;
+    max-width: 100% !important;
+    line-height: 70px !important;
+    top: 11px !important;
+    left: 10px !important; }
+    .hands img {
+      width: 34px !important; }
+    .hands .animation {
+      animation: none !important; }
+
+  .hand {
+    width: 100px !important;
+    height: 100px !important;
+    line-height: 100px !important; }
+
+  .bigPaper {
+    top: -185px !important;
+    left: 2% !important; }
+
+  .bigSciss {
+    top: -185px !important;
+    right: 3% !important; }
+
+  .bigRock {
+    top: 52px !important;
+    left: 35% !important; }
+
+  .rule {
+    bottom: 7px !important;
+    right: 38% !important; }
+
+  #main {
+    margin-top: 10% !important; }
+
+  .img-rules {
+    width: 160px; }
+
+  .order-res-1 {
+    order: 1 !important; }
+
+  .order-res-2 {
+    order: 2 !important; }
+
+  .left-res {
+    left: 65% !important; } }
 
 /*# sourceMappingURL=style.css.map */
