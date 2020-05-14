@@ -1,0 +1,54 @@
+#step_one {
+  margin-top: 5%;
+  padding: 204px 0;
+  background-image: url("../images/bg-triangle.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+
+  .hands {
+    background-color: white !important;
+    width: 100px;
+    height: 100px;
+    max-width: 100%;
+    line-height: 92px;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+  }
+
+  .images {
+    border-radius: 50%;
+    cursor: pointer;
+
+    .hand {
+      width: 150px;
+      height: 150px;
+      max-width: 100%;
+      line-height: 150px;
+      text-align: center;
+      border-radius: 50%;
+    }
+    .paper {
+      background-image: $paper;
+      position: absolute;
+      top: -208px;
+      left: 18%;
+    }
+    .scissors {
+      background-image: $scissors;
+      position: absolute;
+      top: -208px;
+      right: 18%;
+    }
+
+    .rock {
+      background-image: $rock;
+      position: absolute;
+      top: 24px;
+      left: 39.5%;
+    }
+  }
+}

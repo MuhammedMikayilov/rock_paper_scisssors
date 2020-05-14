@@ -1,10 +1,10 @@
 .header-games {
   display: flex;
   justify-content: space-between;
-  margin-top: 30px;
+  margin-top: 23px;
   border: 4px solid $header-outline;
   border-radius: 12px;
-  padding: 25px 18px;
+  padding: 24px 18px;
   font-family: $font-barlow;
 
   .names {
@@ -48,5 +48,13 @@
       margin-left: 8px;
       letter-spacing: 0.1em;
     }
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .header-games {
+    // padding: 0;
+    width: 80%;
+    margin-left: 10%;
   }
 }
