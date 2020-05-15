@@ -151,6 +151,7 @@ const gameRPS = function () {
         }
       }
     }, 1700);
+    win.innerHTML = "Rock";
   };
 
   const imgForAttr = (item) => {
