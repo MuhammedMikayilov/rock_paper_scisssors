@@ -58,6 +58,8 @@ const gameRPS = function () {
         $(".choosen_img .paper").removeClass("win");
         $(".choosen_img .scissors").removeClass("win");
 
+        back.classList.add("disabled");
+        back.innerHTML = "loading ...";
         // let sound = document.querySelector(".sound");
         // sound.play();
 
@@ -109,6 +111,8 @@ const gameRPS = function () {
     let winning = document.querySelector(".soundWin");
 
     setTimeout(function () {
+      back.classList.remove("disabled");
+      back.innerHTML = "continue";
       if (playerAttr === computer) {
         win.innerHTML = "Draw";
         let sound = document.querySelector(".draw");
@@ -134,6 +138,7 @@ const gameRPS = function () {
             countScore = 0;
             count.innerHTML = "0";
             win.innerHTML = "GAME OVER";
+            back.innerHTML = "Play Again";
 
             let sound = document.querySelector(".fail");
             sound.play();
@@ -172,6 +177,7 @@ const gameRPS = function () {
             countScore = 0;
             count.innerHTML = "0";
             win.innerHTML = "GAME OVER";
+            back.innerHTML = "PLAY AGAİN";
 
             let sound = document.querySelector(".fail");
             sound.play();
@@ -210,6 +216,7 @@ const gameRPS = function () {
             countScore = 0;
             count.innerHTML = "0";
             win.innerHTML = "GAME OVER";
+            back.innerHTML = "PLAY AGAİN";
 
             let sound = document.querySelector(".fail");
             sound.play();
