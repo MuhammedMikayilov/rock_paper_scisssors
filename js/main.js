@@ -98,7 +98,7 @@ const gameRPS = function () {
             win.innerHTML = "GAME OVER";
             setTimeout(() => {
               location.reload();
-            }, 3000);
+            }, 800);
           }
         } else if (computer === "images/icon-scissors.svg") {
           win.innerHTML = "You Win";
@@ -122,7 +122,7 @@ const gameRPS = function () {
 
             setTimeout(() => {
               location.reload();
-            }, 3000);
+            }, 800);
           }
         } else if (computer === "images/icon-rock.svg") {
           win.innerHTML = "You Win";
@@ -146,7 +146,7 @@ const gameRPS = function () {
             win.innerHTML = "GAME OVER";
             setTimeout(() => {
               location.reload();
-            }, 2000);
+            }, 800);
           }
         }
       }
@@ -156,12 +156,11 @@ const gameRPS = function () {
   const imgForAttr = (item) => {
     let classes = document.querySelector(".choosen_img .big");
 
+    let main = item.getAttribute("src");
+    choosen_img.setAttribute("src", main);
+
+    // main.style.animation = "";
     setTimeout(function () {
-      let main = item.getAttribute("src");
-      choosen_img.setAttribute("src", main);
-
-      // main.style.animation = "";
-
       if (item.classList.contains("paperHand")) {
         if (classes.classList.contains("rock")) {
           classes.classList.replace("rock", "paper");
@@ -176,7 +175,7 @@ const gameRPS = function () {
         //   classes.classList.replace("rock", "")
         // }
       }
-    }, 10);
+    }, 1000);
     classes.classList.add("rock");
 
     if (!classes.classList.contains("rock")) {

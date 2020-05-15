@@ -43,7 +43,7 @@ body {
   .header-games {
     width: 80% !important;
     margin-left: 10% !important;
-    margin-top: 47px !important;
+    margin-top: 20px !important;
     padding: 10px !important; }
 
   .names h3 {
@@ -193,7 +193,7 @@ span.rule {
 
 @media only screen and (max-width: 767px) {
   .btn {
-    padding: 10px 24% !important; }
+    padding: 10px 45px !important; }
 
   #choosen .compare {
     left: 20% !important; }
@@ -221,7 +221,7 @@ span.rule {
     left: 52% !important; }
 
   .rule {
-    bottom: 34px !important;
+    bottom: 25px !important;
     right: 42% !important; } }
 @media only screen and (max-width: 590px) {
   .header-games {
@@ -229,7 +229,7 @@ span.rule {
     margin-left: 10% !important; }
 
   #main {
-    margin-top: 18% !important; }
+    margin-top: 8% !important; }
     #main .scissors {
       left: 65% !important; }
     #main .paper {
@@ -239,7 +239,8 @@ span.rule {
       left: 36.5% !important; }
 
   .rule {
-    right: 39% !important; } }
+    right: 39% !important;
+    bottom: 20px !important; } }
 @media only screen and (max-width: 470px) {
   h2 {
     font-size: 15px !important; }
@@ -271,7 +272,7 @@ span.rule {
     line-height: 100px !important; }
 
   #main {
-    margin-top: 17% !important; }
+    margin-top: 18% !important; }
     #main .paper {
       top: -185px !important;
       left: 6% !important; }
@@ -299,11 +300,14 @@ span.rule {
     left: 65% !important; } }
 @media only screen and (max-width: 376px) {
   #main {
-    margin-top: 19% !important;
+    margin-top: 5% !important;
     margin-left: 13px !important; }
     #main .paper {
       left: 0 !important; }
     #main .rock {
-      left: 33% !important; } }
+      left: 33% !important; }
+
+  .rule {
+    right: 33% !important; } }
 
 /*# sourceMappingURL=style.css.map */
