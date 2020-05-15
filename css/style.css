@@ -101,6 +101,8 @@ body {
     position: absolute;
     top: 24px;
     left: 39.5%; }
+  .images .comp {
+    background-image: linear-gradient(#f57088, #40b9dd) !important; }
 
 span.rule {
   border: 2px solid #606e85;
@@ -142,6 +144,10 @@ span.rule {
 
 .non {
   display: none; }
+
+.win {
+  transform: scale(1.25);
+  transition: all 4s; }
 
 #choosen {
   margin-top: 5%;
@@ -190,6 +196,14 @@ span.rule {
 
 .non {
   display: none; }
+
+.hidden {
+  opacity: 0;
+  transition: all 0.3s; }
+
+.visible {
+  visibility: visible;
+  transition: all 0.1s; }
 
 @media only screen and (max-width: 767px) {
   .btn {

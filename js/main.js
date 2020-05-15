@@ -27,6 +27,7 @@ const gameRPS = function () {
   rock_paper_sciss.forEach((elem) => {
     elem.addEventListener("click", function () {
       main.style.display = "none";
+      // main.style.opacity = "1";
       choosen.style.display = "block";
 
       setTimeout(function () {
@@ -43,15 +44,34 @@ const gameRPS = function () {
 
       setTimeout(function () {
         $(".non").css("display", "block");
+        $(".hidden").css({
+          // visibility: "visible",
+          opacity: "1",
+
+          transition: "all 0.9s",
+        });
       }, 1700);
 
       back.addEventListener("click", function (e) {
         let classes = document.querySelector(".choosen_img .big");
+        $(".choosen_img .rock").removeClass("win");
+        $(".choosen_img .paper").removeClass("win");
+        $(".choosen_img .scissors").removeClass("win");
+
+        $(".comp_img .rock").removeClass("win");
+        // $(".comp_img .paper").removeClass("win");
+        // $(".comp_img .scissors").removeClass("win");
 
         e.preventDefault();
         main.style.display = "block";
         choosen.style.display = "none";
         $(".non").css("display", "none");
+        // $(".hidden").css("visibility", "hidden");
+        $(".hidden").css({
+          // visibility: "hidden",
+          opacity: "0",
+          transition: "all 0.3s",
+        });
 
         if (classes.classList.contains("paper")) {
           classes.classList.replace("paper", "rock");
@@ -79,15 +99,26 @@ const gameRPS = function () {
   const compImg = (player, computer) => {
     let playerAttr = player.getAttribute("src");
 
+    let rock = document.querySelector(".comp_img .rock");
+    // let paper = $(".choosen_img .paper").addClass("win");
+    // let scissors = $(".choosen_img .scissors").addClass("win");
+
     setTimeout(function () {
       if (playerAttr === computer) {
         win.innerHTML = "Draw";
 
+        $(".choosen_img .rock").addClass("win");
+        $(".choosen_img .paper").addClass("win");
+        $(".choosen_img .scissors").addClass("win");
+
+        $(".comp_img .rock").addClass("win");
+
         console.log(countScore);
       } else if (playerAttr === "images/icon-rock.svg") {
-        // console.log("hello");
         if (computer === "images/icon-paper.svg") {
           win.innerHTML = "You Lose";
+          // $(".comp_img.paper").addClass("win");
+          $(".comp_img .rock").addClass("win");
 
           countScore--;
           count.innerHTML = countScore;
@@ -98,18 +129,24 @@ const gameRPS = function () {
             win.innerHTML = "GAME OVER";
             setTimeout(() => {
               location.reload();
-            }, 800);
+            }, 1800);
           }
         } else if (computer === "images/icon-scissors.svg") {
           win.innerHTML = "You Win";
+          // rock;
+          $(".choosen_img .rock").addClass("win");
           countScore++;
           count.innerHTML = countScore;
         }
       } else if (playerAttr === "images/icon-paper.svg") {
         // console.log("hello");
         if (computer === "images/icon-scissors.svg") {
-          //   console.log("scissor win");
           win.innerHTML = "You Lose";
+          // scissors;
+          // $(".comp_img .scissors").addClass("win");
+          $(".comp_img .rock").addClass("win");
+          // rock;
+
           count.innerHTML = countScore;
 
           countScore--;
@@ -122,21 +159,25 @@ const gameRPS = function () {
 
             setTimeout(() => {
               location.reload();
-            }, 800);
+            }, 1800);
           }
         } else if (computer === "images/icon-rock.svg") {
           win.innerHTML = "You Win";
+          $(".choosen_img .paper").addClass("win");
           countScore++;
           count.innerHTML = countScore;
         }
       } else if (playerAttr === "images/icon-scissors.svg") {
         if (computer === "images/icon-paper.svg") {
           win.innerHTML = "You Win";
+          // scissors;
+          $(".choosen_img .scissors").addClass("win");
           countScore++;
           count.innerHTML = countScore;
         } else if (computer === "images/icon-rock.svg") {
           win.innerHTML = "You Lose";
-
+          // rock;
+          $(".comp_img .rock").addClass("win");
           countScore--;
           count.innerHTML = countScore;
 
@@ -146,7 +187,7 @@ const gameRPS = function () {
             win.innerHTML = "GAME OVER";
             setTimeout(() => {
               location.reload();
-            }, 800);
+            }, 1000);
           }
         }
       }
@@ -172,9 +213,6 @@ const gameRPS = function () {
           classes.classList.replace("rock", "scissors");
         }
       } else {
-        // if(classes.classList.contains("rock")){
-        //   classes.classList.replace("rock", "")
-        // }
       }
     }, 1000);
     classes.classList.add("rock");
