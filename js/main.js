@@ -58,6 +58,9 @@ const gameRPS = function () {
         $(".choosen_img .paper").removeClass("win");
         $(".choosen_img .scissors").removeClass("win");
 
+        // let sound = document.querySelector(".sound");
+        // sound.play();
+
         $(".comp_img .rock").removeClass("win");
         // $(".comp_img .paper").removeClass("win");
         // $(".comp_img .scissors").removeClass("win");
@@ -103,9 +106,13 @@ const gameRPS = function () {
     // let paper = $(".choosen_img .paper").addClass("win");
     // let scissors = $(".choosen_img .scissors").addClass("win");
 
+    let winning = document.querySelector(".soundWin");
+
     setTimeout(function () {
       if (playerAttr === computer) {
         win.innerHTML = "Draw";
+        let sound = document.querySelector(".draw");
+        sound.play();
 
         $(".choosen_img .rock").addClass("win");
         $(".choosen_img .paper").addClass("win");
@@ -127,13 +134,22 @@ const gameRPS = function () {
             countScore = 0;
             count.innerHTML = "0";
             win.innerHTML = "GAME OVER";
+
+            let sound = document.querySelector(".fail");
+            sound.play();
+
             setTimeout(() => {
               location.reload();
-            }, 1800);
+            }, 5500);
+          } else {
+            let sound = document.querySelector(".sound");
+            sound.play();
+            console.log("abs");
           }
         } else if (computer === "images/icon-scissors.svg") {
           win.innerHTML = "You Win";
           // rock;
+          winning.play();
           $(".choosen_img .rock").addClass("win");
           countScore++;
           count.innerHTML = countScore;
@@ -157,13 +173,21 @@ const gameRPS = function () {
             count.innerHTML = "0";
             win.innerHTML = "GAME OVER";
 
+            let sound = document.querySelector(".fail");
+            sound.play();
+
             setTimeout(() => {
               location.reload();
-            }, 1800);
+            }, 5500);
+          } else {
+            let sound = document.querySelector(".sound");
+            sound.play();
+            console.log("abs");
           }
         } else if (computer === "images/icon-rock.svg") {
           win.innerHTML = "You Win";
           $(".choosen_img .paper").addClass("win");
+          winning.play();
           countScore++;
           count.innerHTML = countScore;
         }
@@ -171,6 +195,7 @@ const gameRPS = function () {
         if (computer === "images/icon-paper.svg") {
           win.innerHTML = "You Win";
           // scissors;
+          winning.play();
           $(".choosen_img .scissors").addClass("win");
           countScore++;
           count.innerHTML = countScore;
@@ -185,9 +210,18 @@ const gameRPS = function () {
             countScore = 0;
             count.innerHTML = "0";
             win.innerHTML = "GAME OVER";
+
+            let sound = document.querySelector(".fail");
+            sound.play();
+
             setTimeout(() => {
               location.reload();
-            }, 1000);
+            }, 5500);
+          } else {
+            // let sound = new Audio("./sounds/cmon.mp3");
+            let sound = document.querySelector(".sound");
+            sound.play();
+            console.log("abs");
           }
         }
       }
