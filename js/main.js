@@ -138,9 +138,9 @@ const gameRPS = function () {
             let sound = document.querySelector(".fail");
             sound.play();
 
-            setTimeout(() => {
-              location.reload();
-            }, 5500);
+            // setTimeout(() => {
+            //   location.reload();
+            // }, 5500);
           } else {
             let sound = document.querySelector(".sound");
             sound.play();
@@ -176,9 +176,9 @@ const gameRPS = function () {
             let sound = document.querySelector(".fail");
             sound.play();
 
-            setTimeout(() => {
-              location.reload();
-            }, 5500);
+            // setTimeout(() => {
+            //   location.reload();
+            // }, 5500);
           } else {
             let sound = document.querySelector(".sound");
             sound.play();
@@ -214,9 +214,9 @@ const gameRPS = function () {
             let sound = document.querySelector(".fail");
             sound.play();
 
-            setTimeout(() => {
-              location.reload();
-            }, 5500);
+            // ?setTimeout(() => {
+            //   ?location.reload();
+            // ? }, 5500);
           } else {
             // let sound = new Audio("./sounds/cmon.mp3");
             let sound = document.querySelector(".sound");
